@@ -1,0 +1,328 @@
+/*background-color: #f0f0f0;
+/*Semua*/
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*Header*/
+header img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*tombol*/
+.tombol {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.tombol .Ubutton {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    border-style: solid;
+    text-decoration: none;
+    text-align: center;
+    background-color: #004aad; /* Warna tombol */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.tombol .Ubutton:hover {
+    background-color: white;
+    color: #004aad;
+    border-color: #004aad;
+}
+
+/*footer*/
+footer{
+    background-color: #004aad;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    padding: 30px;
+    gap: 40px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li a{
+    color: white;
+}
+
+.Lcontainer {       
+    max-width: 400px;    
+}
+
+footer h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.category-title {
+  padding-left: 20px; 
+  margin-bottom: 5px; 
+  text-align: left;    
+}
+
+.category-group {
+  margin-bottom: 50px; 
+}
+
+/* Layout Grid untuk Menyusun Cards */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+
+}
+
+/* Desain Komponen Product Card */
+.product-card {
+  width: 100%;
+
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Efek Hover saat Kursor Diatas Card */
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Area Gambar */
+.img-container {
+  width: 100%;
+  height: 250px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .img-container img {
+  transform: scale(1.05);
+}
+
+/* Area Informasi Produk */
+.product-details {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.category {
+  font-size: 12px;
+  color: #777777;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.product-title {
+  font-size: 16px;
+  color: #222222;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.price-container {
+  margin-top: auto;
+  margin-bottom: 14px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #004aad;
+}
+
+/* Tombol Beli */
+.btn-buy {
+  width: 100%;
+  padding: 10px;
+  background-color: #004aad;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-buy:hover {
+  background-color: #00337a;
+}
+
+/*About US*/
+.Acontainer {
+  display: grid;
+  grid-template-columns: 1fr 400px; 
+  gap: 100px; 
+  align-items: center; 
+  padding: 75px 75px;
+}
+
+/*Teks*/
+.Atext h2 {
+  font-size: 1.75rem;
+  color: #0d47a1; 
+  margin-bottom: 15px;
+}
+
+.Atext p {
+  font-size: 1.1rem;
+  line-height: 1.6; 
+  color: #333;
+  margin-bottom: 60px;
+}
+
+/*Gambar*/
+.Aimage img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  object-fit: cover;
+}
+
+/*form*/
+.Ucontainer {
+    display: flex;
+    min-height: 100vh; 
+    width: 100%;
+    margin: 0;
+}
+
+.Ucontainer2 {
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 100vh; 
+    width: 100%;
+    margin: 0;
+}
+
+/*BAGIAN KIRI: GAMBAR (.Uimg)*/
+.Uimg {
+    flex: 1; /* Membagi layar 50% */
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Uimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*BAGIAN KANAN: FORM & TEKS (.Utext)*/
+.Utext {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.Utext h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+/* Merapikan list form */
+.Utext ul {
+    list-style: none;
+    width: 100%;
+    max-width: 380px;
+    padding: 0;
+    margin: 0;
+}
+
+.Utext li {
+    margin-bottom: 20px;
+}
+
+/* Styling Input Text & Password */
+.Utext input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    background-color: #f9f9f9;
+}
+
+.Utext input:focus {
+    border-color: #1e90ff;
+    background-color: #fff;
+}
+
+/* Styling Tombol Sign Up */
+.Utext button {
+    width: 100%;
+    max-width: 380px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    border-style: solid;
+    background-color: #004aad; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.Utext button:hover {
+    background-color: white;
+    color: #004aad;
+    border-color: #004aad;
+}
+
+.sumber{
+  text-align: center;
+}
