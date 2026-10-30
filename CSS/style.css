@@ -14,9 +14,10 @@ html, body {
 }
 
 /*Iframe*/
-iframe{
+iframe {
+    display: block;
     width: 100%;
-    height: 750px;
+    height: calc(100vh - 82px);
     border: none;
     background-color: white;
 }
