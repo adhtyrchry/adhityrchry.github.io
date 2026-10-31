@@ -9,9 +9,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: auto !important;
-    overflow: auto !important;
-    overflow-x: hidden !important;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /*Iframe*/
