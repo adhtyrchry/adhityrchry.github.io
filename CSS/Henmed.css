@@ -326,3 +326,88 @@ footer h2 {
 .sumber{
   text-align: center;
 }
+
+/* ===== RESPONSIVE ===== */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Laptop kecil */
+@media (max-width: 1200px) {
+    .product-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .product-grid { grid-template-columns: repeat(3, 1fr); }
+
+    .Acontainer {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 30px;
+    }
+
+    .Atext p { margin-bottom: 30px; }
+}
+
+/* HP & tablet kecil */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .img-container { height: 180px; }
+
+    .category-title { padding-left: 12px; }
+
+    .Acontainer { padding: 30px 20px; }
+    .Atext h2 { font-size: 1.4rem; }
+    .Atext p { font-size: 1rem; }
+
+    /* Form Sign in / Sign up */
+    .Ucontainer,
+    .Ucontainer2 {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .Uimg {
+        flex: none;
+        height: 220px;
+    }
+
+    .Utext {
+        flex: none;
+        padding: 30px 20px;
+    }
+
+    .Utext h2 { font-size: 24px; }
+
+    /* Tombol */
+    .tombol { padding: 24px 16px; }
+    .tombol .Ubutton {
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px 20px;
+    }
+
+    .Lcontainer { max-width: 100%; }
+
+    /* Tabel Sumber */
+    table { font-size: 14px; }
+}
+
+/* HP kecil */
+@media (max-width: 400px) {
+    .product-grid { grid-template-columns: 1fr; }
+    .img-container { height: 220px; }
+}
