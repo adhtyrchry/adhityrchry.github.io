@@ -80,3 +80,42 @@ nav ul li a:hover{
     border-radius: 20px;
     padding: 10px 15px;
 }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    nav ul { gap: 15px; }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 0.5rem;
+    }
+
+    .logo {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .logo img { width: 80px; }
+
+    .utama,
+    .form {
+        flex: 1 1 auto;
+        justify-content: center;
+    }
+
+    nav ul {
+        gap: 4px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        display: inline-block;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
